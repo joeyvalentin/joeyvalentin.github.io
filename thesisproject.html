@@ -6,76 +6,36 @@
 -->
 <html>
 	<head>
-		<title>József Valentin - Thesis Project</title>
+		<title>Jozsef "Joey" Valentin - Thesis Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">József Valentin</a>
-				<nav>
-					<ul>
-						<li><a href="javascript:history.back()">Back</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Thesis Project</h1>
-							<h3>Developing an adaptive player behaviour driven artificial intelligence for an ARPG</h3>
-							<br>
-							<span class="image fit"><img src="images/thesis/1_crop.png" alt="Banner picture showcasing the game" /></span>
-							<p>
-								The thesis project I worked on was an upgrade from the previous university project (#2). I had to create an adaptive, player behaviour driven artificial intelligence for an action RPG, and analyze different player behaviour types. The project was done in Unreal Engine 5, in cooperation with a fellow student who provided the game's ability system via GAS.
-							</p>
-							<div class="row gtr-uniform">
-								<div class="col-4">
-									<p>
-										The basic idea behind the adaptive system was to first analyze different player behaviours in ARPGs specifically. Four types were chosen: kiting, passive, spamming, and AoE spamming. The system had to be able to impact these patterns by counteracting it via statistical changes or by changing the AI's behaviour. At the end of the project the system was tested and evaluated in a survey with 20+ participants, leading to a positive result.
-										<br>
-										The system is based on a control component which is responsible for timing the sampling, calculation (analysis of behaviour), and the decision making (spawning). The control component derives from an UActorComponent, making it attachable to both characters and regular objects. 
-									</p>
-								</div>
-								<div class="col-8"><span class="image fit"><img src="images/thesis/2.png" alt="Picture showing AI Debug tools" /></span></div>
-								<div class="col-8"><span class="image fit"><img src="images/thesis/3.png" alt="Picture showing the control component's settings" /></span></div>
-								<div class="col-4">
-									<p>
-										The system keeps track of the player's behaviour via a sampling and feedback system. The sampling is based on a timer while feedbacks are from the AI or the player being hit. There are Modifiers which are responsible for calculating a base change and then optionally interpolating it. They generate one or more Plans, which is then used by the controller to change it's own values/behaviour. These modifiers are then registered into a Strategy which is responsible for picking the right plans from the modifiers. The controller then communicates with the Strategy to generate plans or get changes.
-									</p>
-								</div>
-							</div>
-							<p>The calculation of spawn points are done via EQS to make the system capable of dynamically changing the area of spawning. An example for it can be seen on the picture. If the system wants to spawn two enemies with a 1.0 factor of spreading the enemies, it will pick spawn points 0 and 5.</p>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+		<header id="header">
+				<a href="index.html" class="title">Jozsef "Joey" Valentin</a>
+				<nav><ul><li><a href="javascript:history.back()">Back</a></li></ul></nav>
+		</header>
+		<div id="wrapper">
+			<section id="main" class="wrapper">
 				<div class="inner">
-					<ul class="menu">
-						<li>&copy; József Valentin, All rights reserved.</li>
-					</ul>
+					<h1 class="major">Thesis Project</h1>
+					<h3>Developing an adaptive player behaviour driven artificial intelligence for an ARPG</h3>
+					<br>
+					<span class="image fit"><img src="images/thesis/1_crop.png" alt="Banner picture showcasing the game" /></span>
+					<p>The thesis project I worked on was an upgrade from the previous university project (#2). I had to create an adaptive, player behaviour driven artificial intelligence for an action RPG, and analyze different player behaviour types. The project was done in Unreal Engine 5, in cooperation with a fellow student who provided the game's ability system via GAS.</p>
+					<div class="row gtr-uniform">
+						<div class="col-4"><p>The basic idea behind the adaptive system was to first analyze different player behaviours in ARPGs specifically. Four types were chosen: kiting, passive, spamming, and AoE spamming. The system had to be able to impact these patterns by counteracting it via statistical changes or by changing the AI's behaviour. At the end of the project the system was tested and evaluated in a survey with 20+ participants, leading to a positive result.<br>The system is based on a control component which is responsible for timing the sampling, calculation (analysis of behaviour), and the decision making (spawning). The control component derives from an UActorComponent, making it attachable to both characters and regular objects.</p></div>
+						<div class="col-8"><span class="image fit"><img src="images/thesis/2.png" alt="Picture showing AI Debug tools" /></span></div>
+						<div class="col-8"><span class="image fit"><img src="images/thesis/3.png" alt="Picture showing the control component's settings" /></span></div>
+						<div class="col-4"><p>The system keeps track of the player's behaviour via a sampling and feedback system. The sampling is based on a timer while feedbacks are from the AI or the player being hit. There are Modifiers which are responsible for calculating a base change and then optionally interpolating it. They generate one or more Plans, which is then used by the controller to change it's own values/behaviour. These modifiers are then registered into a Strategy which is responsible for picking the right plans from the modifiers. The controller then communicates with the Strategy to generate plans or get changes.</p></div>
+					</div>
+					<p>The calculation of spawn points are done via EQS to make the system capable of dynamically changing the area of spawning. An example for it can be seen on the picture. If the system wants to spawn two enemies with a 1.0 factor of spreading the enemies, it will pick spawn points 0 and 5.</p>
 				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			</section>
+		</div>
+		<footer id="footer" class="wrapper alt"><div class="inner"><ul class="menu"><li>&copy; Jozsef "Joey" Valentin, All rights reserved.</li></ul></div></footer>
+		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
 	</body>
 </html>
