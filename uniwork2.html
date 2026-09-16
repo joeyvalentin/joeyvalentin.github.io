@@ -6,75 +6,29 @@
 -->
 <html>
 	<head>
-		<title>József Valentin - University Project #2</title>
+		<title>Jozsef "Joey" Valentin - University Project #2</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">József Valentin</a>
-				<nav>
-					<ul>
-						<li><a href="javascript:history.back()">Back</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">University Project #2</h1>
-							<span class="image fit"><img src="images/uni2/5.png" alt="Overview of the level in editor" /></span>
-							<p>The second Unreal Engine 5 project I worked on was a partially open-world action RPG, inspired by titles like Diablo 4 and Path of Exile. It featured a time of day and weather system utilizing Niagara, a static node-based spawn system for AI agents, both enemy and neutral AI agents, and abilities.</p>
-							<span class="image fit"><img src="images/uni2/3.png" alt="Overview of the niagara effects and the weather system" /></span>
-							<p>
-								In the project I worked with only one other student. I was responsible for the creation of the dynamic weather system, the day and night cycle, the static node-based spawn system, enemy and NPC AI agents, Smart Objects usable by the NPCs, the creation and design of the level, character and AI animations and models. For version control we used Perforce.
-								<br />
-								The weather and time system operated via a central controller node which could change the weather, and the time of day. It propogated the changes to weather nodes which could be independently placed and scaled in the level, and configured for particle density, amount. The weathers had to be created on the main controller, where a unique key was needed, a particle effect (created in Niagara) and a sound effect. For the project I made a rain and a snow effect.
-							</p>
-							<div class="row gtr-uniform">
-								<div class="col-4">
-									<p>
-										The spawn system was a node-based system, where the nodes could be placed and scaled in the level. The nodes could be configured for the amount of agents to spawn, whether the picking of agents were random, a respawn timer and the characters itself. The characters were handled in a heterogeneous collection, where the character classes had to be derived from a base class. Other than that they could be assigned any materials, AI Controller and behaviour tree. The system was used for both the enemies and the NPCs.
-									</p>
-								</div>
-								<div class="col-8"><span class="image fit"><img src="images/uni2/1.png" alt="Overview of the spawn system" /></span></div>
-								<div class="col-8"><span class="image fit"><img src="images/uni2/2.png" alt="Overview of the SO and Gameplay Tags system" /></span></div>
-								<div class="col-4">
-									<p>
-										The AI agents were created using behavior trees. There were also Smart Objects created which could be used by the NPCs. Two examples of this are the bench and the house which they used varyingly based on the weather. This was achieved by creating Gameplay Tags and then later on filtering the SOs based on the tags. The tags were also used for differentiating behaviour patterns for the boss enemy based on remaining health.
-									</p>
-							</div>
-							<p>Last but not least I had to create the animation montages associated with the abilities, and the usage of the smart objects. Most models and animations were sourced from Mixamo, Quixel and the Unreal Marketplace.</p>
-						</div>
-					</section>
-
+		<header id="header"><a href="index.html" class="title">Jozsef "Joey" Valentin</a><nav><ul><li><a href="javascript:history.back()">Back</a></li></ul></nav></header>
+		<div id="wrapper"><section id="main" class="wrapper"><div class="inner">
+			<h1 class="major">University Project #2</h1>
+			<span class="image fit"><img src="images/uni2/5.png" alt="Overview of the level in editor" /></span>
+			<p>The second Unreal Engine 5 project I worked on was a partially open-world action RPG, inspired by titles like Diablo 4 and Path of Exile. It featured a time of day and weather system utilizing Niagara, a static node-based spawn system for AI agents, both enemy and neutral AI agents, and abilities.</p>
+			<span class="image fit"><img src="images/uni2/3.png" alt="Overview of the niagara effects and the weather system" /></span>
+			<p>In the project I worked with only one other student. I was responsible for the creation of the dynamic weather system, the day and night cycle, the static node-based spawn system, enemy and NPC AI agents, Smart Objects usable by the NPCs, the creation and design of the level, character and AI animations and models. For version control we used Perforce.<br />The weather and time system operated via a central controller node which could change the weather, and the time of day. It propogated the changes to weather nodes which could be independently placed and scaled in the level, and configured for particle density, amount. The weathers had to be created on the main controller, where a unique key was needed, a particle effect (created in Niagara) and a sound effect. For the project I made a rain and a snow effect.</p>
+			<div class="row gtr-uniform">
+				<div class="col-4"><p>The spawn system was a node-based system, where the nodes could be placed and scaled in the level. The nodes could be configured for the amount of agents to spawn, whether the picking of agents were random, a respawn timer and the characters itself. The characters were handled in a heterogeneous collection, where the character classes had to be derived from a base class. Other than that they could be assigned any materials, AI Controller and behaviour tree. The system was used for both the enemies and the NPCs.</p></div>
+				<div class="col-8"><span class="image fit"><img src="images/uni2/1.png" alt="Overview of the spawn system" /></span></div>
+				<div class="col-8"><span class="image fit"><img src="images/uni2/2.png" alt="Overview of the SO and Gameplay Tags system" /></span></div>
+				<div class="col-4"><p>The AI agents were created using behavior trees. There were also Smart Objects created which could be used by the NPCs. Two examples of this are the bench and the house which they used varyingly based on the weather. This was achieved by creating Gameplay Tags and then later on filtering the SOs based on the tags. The tags were also used for differentiating behaviour patterns for the boss enemy based on remaining health.</p></div>
+				<p>Last but not least I had to create the animation montages associated with the abilities, and the usage of the smart objects. Most models and animations were sourced from Mixamo, Quixel and the Unreal Marketplace.</p>
 			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; József Valentin, All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		</div></section></div>
+		<footer id="footer" class="wrapper alt"><div class="inner"><ul class="menu"><li>&copy; Jozsef "Joey" Valentin, All rights reserved.</li></ul></div></footer>
+		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
 	</body>
 </html>
